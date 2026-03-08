@@ -19,7 +19,7 @@ const setStatus = (msg) => {
 const generateAnswer = async (question) => {
   const prompt = question.toLowerCase();
 
-  if (prompt.includes('bonjour')) return 'Bonjour, je suis prêt à répondre à tes questions.';
+  if (prompt.includes('bonjour'or 'salut')) return 'Bonjour, je suis prêt à répondre à tes questions.' or 'salut, comment puis-je vous aider ';
   if (prompt.includes('heure')) {
     return `Il est ${new Date().toLocaleTimeString('fr-FR', { hour: '2-digit', minute: '2-digit' })}.`;
   }
