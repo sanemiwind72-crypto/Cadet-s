@@ -1,4 +1,4 @@
-# Cadet-s — Assistant vocal IA (style Siri)
+# Cadet-s — Assistant vocal IA (style Cadet)
 
 Ce projet est une interface web **vocale uniquement** (français) :
 - l'utilisateur pose sa question au micro,
