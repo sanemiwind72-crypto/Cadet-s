@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadet Voice IA</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <h1>Assistant vocal IA</h1>
+      <p class="subtitle">Pose ta question uniquement avec ta voix.</p>
+
+      <div class="orb-wrap" aria-hidden="true">
+        <div id="orb" class="orb idle">
+          <div class="glow"></div>
+          <div class="core"></div>
+        </div>
+      </div>
+
+      <p id="status" class="status">Clique sur “Démarrer” pour parler.</p>
+      <p id="transcript" class="transcript"></p>
+
+      <div class="controls">
+        <button id="startBtn" class="btn primary">Démarrer</button>
+        <button id="stopBtn" class="btn" disabled>Stop</button>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
