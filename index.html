@@ -1,0 +1,57 @@
+diff --git a/index.html b/index.html
+new file mode 100644
+index 0000000000000000000000000000000000000000..90229b83ab90647f325b34b26488d53d3e0bbc52
+--- /dev/null
++++ b/index.html
+@@ -0,0 +1,51 @@
++<!DOCTYPE html>
++<html lang="fr">
++  <head>
++    <meta charset="UTF-8" />
++    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
++    <title>Cadet Books - Lire des livres</title>
++    <link rel="stylesheet" href="styles.css" />
++  </head>
++  <body>
++    <header class="hero">
++      <div class="hero__content">
++        <h1>📚 Cadet Books</h1>
++        <p>Trouve rapidement des livres à lire grâce à Open Library.</p>
++        <form id="search-form" class="search-bar" aria-label="Recherche de livres">
++          <input
++            id="search-input"
++            type="text"
++            name="q"
++            placeholder="Ex: Harry Potter, Victor Hugo, science-fiction..."
++            required
++          />
++          <button type="submit">Rechercher</button>
++        </form>
++      </div>
++    </header>
++
++    <main>
++      <section class="controls">
++        <p id="status" role="status" aria-live="polite">
++          Lance une recherche pour découvrir des livres.
++        </p>
++      </section>
++
++      <section id="results" class="books-grid" aria-label="Résultats de recherche"></section>
++    </main>
++
++    <template id="book-template">
++      <article class="book-card">
++        <img class="book-cover" alt="Couverture du livre" loading="lazy" />
++        <div class="book-content">
++          <h2 class="book-title"></h2>
++          <p class="book-author"></p>
++          <p class="book-year"></p>
++          <a class="book-link" target="_blank" rel="noopener noreferrer">Voir sur Open Library</a>
++        </div>
++      </article>
++    </template>
++
++    <script src="app.js"></script>
++  </body>
++</html>
